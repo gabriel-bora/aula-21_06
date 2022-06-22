@@ -5,10 +5,11 @@ import ContainerIcon from '../ContainerIcons/ContainerIcons';
 
 const SectionIconStyled = styled.div`
   width: 100%;
-  height: 40vh;
+  padding-top: 13vh;
+  height: 60vh;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-evenly;
+  align-items: baseline;
   background-color: ${(props) => props.theme.backgroundColor};
   color: ${(props) => props.theme.color};
 `;
@@ -16,11 +17,11 @@ const SectionIconStyled = styled.div`
 const SectionIcons = () => {
   return (
     <SectionIconStyled>
-      <ContainerIcon titulo='Titulo 1' texto='Texto 1' icon={<BsLaptop />} />
-      <ContainerIcon titulo='Titulo 2' texto='Texto 2' icon={<BsBoxSeam />} />
+      <ContainerIcon titulo='Somente para desktop' texto='Vamos aprender como utilizar um framework' icon={<BsLaptop />} />
+      <ContainerIcon titulo='Criado com componentes' texto='Utilizamos o Styled Components' icon={<BsBoxSeam />} />
       <ContainerIcon
-        titulo='Titulo 3'
-        texto='Texto 3'
+        titulo='Fácil aproveitamento'
+        texto='Estamos no caminho'
         icon={<BsHandThumbsUp />}
       />
     </SectionIconStyled>
